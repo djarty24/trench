@@ -10,122 +10,123 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <title>The Trenches Soundscape</title>
 </head>
-<body>
-    <div class="container">
-        <div class="left">
-            <h1>The<br>Trenches:<br>A Soundscape</h1>
-            <p>World War I trenches, as seen on the Western Front, were a complex network of deep, zigzagging ditches designed for defensive warfare. 
-                Consisting of front-line, support, and reserve trenches, soldiers endured harsh conditions, including flooding, mud, and unsanitary environments. 
-                Barbed wire, sandbags, and obstacles were used as additional layers of defense, and the land between opposing lines, or <span style="font-style: italic;">"No Man's Land"</span> posed constant danger. 
-                The constant threat of enemy attacks, artillery shelling, and gas assaults, alongside static nature of trench warfare contributed to thousands of casualites and very little gain of land,
-                the Battle of the Somme being a prominent example.
-            </p>
+    <body>
+        <div class="container">
+            <div class="left">
+                <h1>The<br>Trenches:<br>A Soundscape</h1>
+                <p><a href="https://en.wikipedia.org/wiki/Trench_warfare" target="_blank">World War I trenches</a>, as seen on the Western Front, were a complex network of deep, zigzagging ditches designed for defensive warfare. 
+                    Consisting of front-line, support, and reserve trenches, soldiers endured <a href="https://www.bbc.co.uk/bitesize/articles/z8sssbk" target="_blank">harsh conditions</a>, including flooding, mud, and unsanitary environments. 
+                    Barbed wire, sandbags, and obstacles were used as additional layers of defense, and the land between opposing lines, or <a href="https://en.wikipedia.org/wiki/No_man%27s_land" style="font-style: italic;">No Man's Land</a> posed constant danger. 
+                    The constant threat of enemy attacks, artillery shelling, and gas assaults, alongside static nature of trench warfare contributed to <a href="http://www.100letprve.si/en/world_war_1/casualties/index.html" target="_blank">thousands of casualites</a> and very little gain of land,
+                    the <a href="https://en.wikipedia.org/wiki/Battle_of_the_Somme" target="_blank">Battle of the Somme</a> being a prominent example.
+                </p>
+                <p>Revati Tambe | <span style="font-style: italic;">World History</span> | <span style="font-style: italic;">Period 5</span></p>
+            </div>
+            <div class="center">
+                <img src="/assets/img/trench.png" alt="#">
+            </div>
+            <div class="right">
+                <div class="soundbox">
+                    <div class="sound-title-container">
+                        <h4>Background</h4>
+                        <a href="#" class="on" id="play1" onclick="toggleSound(1)"><img src="/assets/img/play.png" alt=""></a>
+                        <a href="#" class="off" id="pause1" onclick="toggleSound(1)"><img src="/assets/img/pause.png" alt=""></a>
+                    </div>
+                    <div class="slider-container">
+                        <img src="/assets/img/audio-icon.png" alt="">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="slider1">
+                    </div>         
+                </div>
+                <div class="soundbox">
+                    <div class="sound-title-container">
+                        <h4>Rain</h4>
+                        <a href="#" class="on" id="play2" onclick="toggleSound(2)"><img src="/assets/img/play.png" alt=""></a>
+                        <a href="#" class="off" id="pause2" onclick="toggleSound(2)"><img src="/assets/img/pause.png" alt=""></a>
+                    </div>
+                    <div class="slider-container">
+                        <img src="/assets/img/audio-icon.png" alt="">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="slider2">
+                    </div>         
+                </div>
+                <div class="soundbox">
+                    <div class="sound-title-container">
+                        <h4>Marching</h4>
+                        <a href="#" class="on" id="play3" onclick="toggleSound(3)"><img src="/assets/img/play.png" alt=""></a>
+                        <a href="#" class="off" id="pause3" onclick="toggleSound(3)"><img src="/assets/img/pause.png" alt=""></a>
+                    </div>
+                    <div class="slider-container">
+                        <img src="/assets/img/audio-icon.png" alt="">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="slider3">
+                    </div>         
+                </div>
+                <div class="soundbox">
+                    <div class="sound-title-container">
+                        <h4>Drumming</h4>
+                        <a href="#" class="on" id="play4" onclick="toggleSound(4)"><img src="/assets/img/play.png" alt=""></a>
+                        <a href="#" class="off" id="pause4" onclick="toggleSound(4)"><img src="/assets/img/pause.png" alt=""></a>
+                    </div>
+                    <div class="slider-container">
+                        <img src="/assets/img/audio-icon.png" alt="">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="slider4">
+                    </div>         
+                </div>
+                <div class="soundbox">
+                    <div class="sound-title-container">
+                        <h4>Trench Whistle</h4>
+                        <a href="#" class="on" id="play5" onclick="toggleSound(5)"><img src="/assets/img/play.png" alt=""></a>
+                        <a href="#" class="off" id="pause5" onclick="toggleSound(5)"><img src="/assets/img/pause.png" alt=""></a>
+                    </div>
+                    <div class="slider-container">
+                        <img src="/assets/img/audio-icon.png" alt="">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="slider5">
+                    </div>         
+                </div>
+                <div class="soundbox">
+                    <div class="sound-title-container">
+                        <h4>Gunshots</h4>
+                        <a href="#" class="on" id="play6" onclick="toggleSound(6)"><img src="/assets/img/play.png" alt=""></a>
+                        <a href="#" class="off" id="pause6" onclick="toggleSound(6)"><img src="/assets/img/pause.png" alt=""></a>
+                    </div>
+                    <div class="slider-container">
+                        <img src="/assets/img/audio-icon.png" alt="">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="slider6">
+                    </div>         
+                </div>
+                <div class="soundbox">
+                    <div class="sound-title-container">
+                        <h4>Artillery Shells</h4>
+                        <a href="#" class="on" id="play7" onclick="toggleSound(7)"><img src="/assets/img/play.png" alt=""></a>
+                        <a href="#" class="off" id="pause7" onclick="toggleSound(7)"><img src="/assets/img/pause.png" alt=""></a>
+                    </div>
+                    <div class="slider-container">
+                        <img src="/assets/img/audio-icon.png" alt="">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="slider7">
+                    </div>         
+                </div>
+                <div class="soundbox">
+                    <div class="sound-title-container">
+                        <h4>Gas Attacks</h4>
+                        <a href="#" class="on" id="play8" onclick="toggleSound(8)"><img src="/assets/img/play.png" alt=""></a>
+                        <a href="#" class="off" id="pause8" onclick="toggleSound(8)"><img src="/assets/img/pause.png" alt=""></a>
+                    </div>
+                    <div class="slider-container">
+                        <img src="/assets/img/audio-icon.png" alt="">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="slider8">
+                    </div>         
+                </div>
+                <div class="soundbox">
+                    <div class="sound-title-container">
+                        <h4>Explosions</h4>
+                        <a href="#" class="on" id="play9" onclick="toggleSound(9)"><img src="/assets/img/play.png" alt=""></a>
+                        <a href="#" class="off" id="pause9" onclick="toggleSound(9)"><img src="/assets/img/pause.png" alt=""></a>
+                    </div>
+                    <div class="slider-container">
+                        <img src="/assets/img/audio-icon.png" alt="">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="slider9">
+                    </div>         
+                </div>
+            </div>
         </div>
-        <div class="center">
-            <img src="/assets/img/trench.png" alt="#">
-        </div>
-        <div class="right">
-            <div class="soundbox">
-                <div class="sound-title-container">
-                    <h4>Background</h4>
-                    <a href="#" class="on" id="play1" onclick="toggleSound(1)"><img src="/assets/img/play.png" alt=""></a>
-                    <a href="#" class="off" id="pause1" onclick="toggleSound(1)"><img src="/assets/img/pause.png" alt=""></a>
-                </div>
-                <div class="slider-container">
-                    <img src="/assets/img/audio-icon.png" alt="">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="slider1">
-                </div>         
-            </div>
-            <div class="soundbox">
-                <div class="sound-title-container">
-                    <h4>Rain</h4>
-                    <a href="#" class="on" id="play2" onclick="toggleSound(2)"><img src="/assets/img/play.png" alt=""></a>
-                    <a href="#" class="off" id="pause2" onclick="toggleSound(2)"><img src="/assets/img/pause.png" alt=""></a>
-                </div>
-                <div class="slider-container">
-                    <img src="/assets/img/audio-icon.png" alt="">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="slider2">
-                </div>         
-            </div>
-            <div class="soundbox">
-                <div class="sound-title-container">
-                    <h4>Marching</h4>
-                    <a href="#" class="on" id="play3" onclick="toggleSound(3)"><img src="/assets/img/play.png" alt=""></a>
-                    <a href="#" class="off" id="pause3" onclick="toggleSound(3)"><img src="/assets/img/pause.png" alt=""></a>
-                </div>
-                <div class="slider-container">
-                    <img src="/assets/img/audio-icon.png" alt="">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="slider3">
-                </div>         
-            </div>
-            <div class="soundbox">
-                <div class="sound-title-container">
-                    <h4>Drumming</h4>
-                    <a href="#" class="on" id="play4" onclick="toggleSound(4)"><img src="/assets/img/play.png" alt=""></a>
-                    <a href="#" class="off" id="pause4" onclick="toggleSound(4)"><img src="/assets/img/pause.png" alt=""></a>
-                </div>
-                <div class="slider-container">
-                    <img src="/assets/img/audio-icon.png" alt="">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="slider4">
-                </div>         
-            </div>
-            <div class="soundbox">
-                <div class="sound-title-container">
-                    <h4>Trench Whistle</h4>
-                    <a href="#" class="on" id="play5" onclick="toggleSound(5)"><img src="/assets/img/play.png" alt=""></a>
-                    <a href="#" class="off" id="pause5" onclick="toggleSound(5)"><img src="/assets/img/pause.png" alt=""></a>
-                </div>
-                <div class="slider-container">
-                    <img src="/assets/img/audio-icon.png" alt="">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="slider5">
-                </div>         
-            </div>
-            <div class="soundbox">
-                <div class="sound-title-container">
-                    <h4>Gunshots</h4>
-                    <a href="#" class="on" id="play6" onclick="toggleSound(6)"><img src="/assets/img/play.png" alt=""></a>
-                    <a href="#" class="off" id="pause6" onclick="toggleSound(6)"><img src="/assets/img/pause.png" alt=""></a>
-                </div>
-                <div class="slider-container">
-                    <img src="/assets/img/audio-icon.png" alt="">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="slider6">
-                </div>         
-            </div>
-            <div class="soundbox">
-                <div class="sound-title-container">
-                    <h4>Artillery Shells</h4>
-                    <a href="#" class="on" id="play7" onclick="toggleSound(7)"><img src="/assets/img/play.png" alt=""></a>
-                    <a href="#" class="off" id="pause7" onclick="toggleSound(7)"><img src="/assets/img/pause.png" alt=""></a>
-                </div>
-                <div class="slider-container">
-                    <img src="/assets/img/audio-icon.png" alt="">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="slider7">
-                </div>         
-            </div>
-            <div class="soundbox">
-                <div class="sound-title-container">
-                    <h4>Gas Attacks</h4>
-                    <a href="#" class="on" id="play8" onclick="toggleSound(8)"><img src="/assets/img/play.png" alt=""></a>
-                    <a href="#" class="off" id="pause8" onclick="toggleSound(8)"><img src="/assets/img/pause.png" alt=""></a>
-                </div>
-                <div class="slider-container">
-                    <img src="/assets/img/audio-icon.png" alt="">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="slider8">
-                </div>         
-            </div>
-            <div class="soundbox">
-                <div class="sound-title-container">
-                    <h4>Explosions</h4>
-                    <a href="#" class="on" id="play9" onclick="toggleSound(9)"><img src="/assets/img/play.png" alt=""></a>
-                    <a href="#" class="off" id="pause9" onclick="toggleSound(9)"><img src="/assets/img/pause.png" alt=""></a>
-                </div>
-                <div class="slider-container">
-                    <img src="/assets/img/audio-icon.png" alt="">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="slider9">
-                </div>         
-            </div>
-        </div>
-    </div>
-    <script src="/scripts.js"></script>
-</body>
+        <script src="/scripts.js"></script>
+    </body>
 </html>
