@@ -66,8 +66,13 @@
 
 .right {
     grid-area: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: fit-content;
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 40px;
 }
 
 .sound-title-container {
